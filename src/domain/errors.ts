@@ -8,7 +8,7 @@ export class InsufficientFundsError extends Error{
 }
 
 export class AccountNotFoundError extends Error{
-    constructor(accountId: number){
+    constructor(accountId: string){
         super(
             `Account not found: ${accountId}`
         );
