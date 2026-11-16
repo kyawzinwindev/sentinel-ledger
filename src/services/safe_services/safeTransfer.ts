@@ -1,5 +1,5 @@
-import { pool } from "../config/database.js";
-import { InsufficientFundsError } from "../domain/errors.js";
+import { pool } from "../../config/database.js";
+import { InsufficientFundsError } from "../../domain/errors.js";
 
 export interface TransferInput {
     sourceAccountId: string;

@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterAll } from 'vitest';
 import { pool } from '../src/config/database.js';
-import { executeSafeTransfer } from '../src/services/safeTransfer.js';
+import { executeSafeTransfer } from '../src/services/safe_services/safeTransfer.js';
 import { InsufficientFundsError } from '../src/domain/errors.js';
 
 describe('Double Spend Concurrency Test', () => {

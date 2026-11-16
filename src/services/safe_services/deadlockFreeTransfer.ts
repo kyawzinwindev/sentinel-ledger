@@ -1,9 +1,9 @@
 import { resolve } from "node:dns";
-import { pool } from "../config/database.js";
+import { pool } from "../../config/database.js";
 import {
   InsufficientFundsError,
   AccountNotFoundError,
-} from "../domain/errors.js";
+} from "../../domain/errors.js";
 
 export interface TransferInput {
   sourceAccountId: string;
