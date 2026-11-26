@@ -78,8 +78,7 @@ export async function executeIdempotentTransfer(
             redisKey,
             JSON.stringify(completedRecord),
             'EX',
-            TTL_SECONDS,
-            'NX'
+            TTL_SECONDS
         )
 
         return {
