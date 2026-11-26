@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterAll } from "vitest";
 import { pool } from "../src/config/database.js";
 import { executeNaiveTwoLockTransfer } from "../src/services/vulnerabilities/deadlockTransfer.js";
-import { executeDeadLockFreeTransfer } from "../src/services/safe_services/deadlockFreeTransfer.js";
+import { executeDeadLockFreeTransfer } from "../src/services/productions/deadlockFreeTransfer.js";
 
 describe("Bidirectional Transfer Deadlock Test", () => {
   let aliceId: string;

@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterAll } from 'vitest';
 import { pool } from '../src/config/database.js';
-import { executeLedgerTransfer } from '../src/services/safe_services/ledgerTransfer.js';
+import { executeLedgerTransfer } from '../src/services/productions/ledgerTransfer.js';
 
 describe('Double-Entry Ledger & Financial Invariants Test', () => {
   let aliceId: string;

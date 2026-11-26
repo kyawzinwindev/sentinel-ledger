@@ -5,7 +5,7 @@ import { redis } from '../src/config/redis.js';
 import {
   executeIdempotentTransfer,
   DuplicateRequestInProgressError,
-} from '../src/services/safe_services/idempotentTransfer.js';
+} from '../src/services/productions/idempotentTransfer.js';
 
 describe('Distributed Idempotency Test (Redis + Postgres)', () => {
   let aliceId: string;
